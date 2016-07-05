@@ -13,47 +13,102 @@
 
     <title>Tizen Web IDE - Tizen - Tizen basic Application</title>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <script src="js/main.js"></script>
+    <link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	
+	<script type="text/javascript" src="./lib/jquery.js"></script>
+    
 </head>
 
 <body>
-  <header>
-    <hgroup>
-      <h1>Tizen app</h1>
-      <h2> template of tizen</h2>
-    </hgroup>
-  </header>
 
-
-  <nav>
-    <ul>
-       <li><a href="page1.html">Home</a></li>
-    </ul>
-  </nav>
-
-  <article>
-
+<div class="ui-page" id="one">
       <h1>
         <img src="images/tizen_32.png" width="32"/> Application Name
       </h1>
-    </header>
     <p>This is an empty template of Tizen Web Application. Tizen will support multiple device categories:</p>
     <ul>
       <li>smartphones, tablets and smart TVs
       <li>netbooks, in-vehicle infotainment devices
     </ul>
     <section>
-      <p>This is a basic section of a document.</p>
-      <p>The following button displays a time using JavaScript.</p>
       <div id="divbutton1">
         <button onclick="startTime();">Clock</button>
       </div>
     </section>
-  </article>
 
-  <footer>
-    <p>&copy; 2012 Company Name. All rights reserved.</p>
-  </footer>    
+<ul class="ui-listview">
+			 <li class="ui-group-index">Show internal pages:</li>
+				 <li class="ui-li-anchor"><a href="#two">Show page "two"</a></li>
+				 <li class="ui-li-anchor"><a href="#three">Show page "three"</a></li>
+				 <li class="ui-li-anchor"><a href="#four">Show page "four"</a></li>
+			</ul>
+  
+  
+  </div>
+  
+  <div id="two" class="ui-page">
+  <div id="divbutton1">
+		<img id="im" src="images\space.jpg" alt="ima" style="visibility: hidden; width: 95vw" />
+        <br><button onclick="showimage();">Изображение</button>
+      </div>
+      
+      <div id="divbutton2">
+        <button onclick="showrez();">Разрешение</button>
+        <br><label id='rez'></label>
+      </div>
+      <ul class="ui-listview">
+			 <li class="ui-group-index">Show internal pages:</li>
+				 <li class="ui-li-anchor"><a href="#one">Show page "one"</a></li>
+				 <li class="ui-li-anchor"><a href="#three">Show page "three"</a></li>
+				 <li class="ui-li-anchor"><a href="#four">Show page "four"</a></li>
+			</ul>
+  
+  </div>
+  
+  <div id="three" class="ui-page">
+		<p id="three1">jQuery — библиотека JavaScript, фокусирующаяся на взаимодействии JavaScript и HTML.</p>
+		<br><div id="three2">Библиотека jQuery помогает легко получать доступ</div> к любому элементу DOM, <div id="three3">обращаться к атрибутам и содержимому элементов DOM,</div> <div id="three4"> манипулировать ими.</div>
+		<br><div id="three5">Также библиотека jQuery предоставляет удобный API для работы с AJAX. Сейчас разработка jQuery ведётся командой jQuery во главе с</div> Джоном Резигом.
+		
+		<script>
+			$("#three1").css("background-color", "silver");
+			$("#three2").css("font-weight", "bold");
+			$("#three3").css({"font-style": "italic","color": "silver"});
+			$("#three4").css("color", "white");
+			$("#three5").css("font-size", "5pt");
+		</script>
+		
+      <ul class="ui-listview">
+			 <li class="ui-group-index">Show internal pages:</li>
+				 <li class="ui-li-anchor"><a href="#one">Show page "one"</a></li>
+				 <li class="ui-li-anchor"><a href="#two">Show page "two"</a></li>
+				 <li class="ui-li-anchor"><a href="#four">Show page "four"</a></li>
+			</ul>
+  
+  </div>
+  
+  <div id="four" class="ui-page">
+		<video width="350vw" controls="controls">
+ 			<source src="./video/_TouchCube.mp4">
+		</video>
+		
+		
+		
+		<iframe width="350vw"  src="https://www.youtube.com/embed/XegLymXVthg" frameborder="0" allowfullscreen></iframe>
+		
+		
+      <ul class="ui-listview">
+			 <li class="ui-group-index">Show internal pages:</li>
+				 <li class="ui-li-anchor"><a href="#one">Show page "one"</a></li>
+				 <li class="ui-li-anchor"><a href="#two">Show page "two"</a></li>
+				 <li class="ui-li-anchor"><a href="#three">Show page "three"</a></li>
+			</ul>
+  
+  </div>
+  
+  <script type="text/javascript" src="./lib/tau/mobile/js/tau.js"></script>
+  
+	<script src="./js/main.js"></script>    
 </body>
 </html>
