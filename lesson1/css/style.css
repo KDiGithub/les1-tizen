@@ -55,3 +55,21 @@ footer p {
     color: #888;
     margin-top: 24px;
 }
+
+.ctext {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+.cchess {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+	width: 99%
+}

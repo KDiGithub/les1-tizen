@@ -36,12 +36,14 @@
         <button onclick="startTime();">Clock</button>
       </div>
     </section>
+    
+    <br>
 
 <ul class="ui-listview">
 			 <li class="ui-group-index">Show internal pages:</li>
-				 <li class="ui-li-anchor"><a href="#two">Show page "two"</a></li>
-				 <li class="ui-li-anchor"><a href="#three">Show page "three"</a></li>
-				 <li class="ui-li-anchor"><a href="#four">Show page "four"</a></li>
+				 <li class="ui-li-anchor"><a href="#two">Image, resolution and canvas</a></li>
+				 <li class="ui-li-anchor"><a href="#three">Text JQuery</a></li>
+				 <li class="ui-li-anchor"><a href="#four">Video</a></li>
 			</ul>
   
   
@@ -49,7 +51,7 @@
   
   <div id="two" class="ui-page" style="overflow:auto">
   <div id="divbutton1">
-		<img id="im" src="images\space.jpg" alt="ima" style="visibility: hidden; width: 85vw" />
+		<img id="im" src="images\try.jpg" alt="ima" style="visibility: hidden; width: 90vw" />
         <br><button onclick="showimage();">Изображение</button>
       </div>
       
@@ -57,13 +59,55 @@
         <button onclick="showrez();">Разрешение</button>
         <br><label id='rez'></label>
       </div>
+      
+      <canvas class="ctext" id="Cantext" width="150" height="150" >
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("Cantext");
+var ctx = c.getContext("2d");
+ctx.font = "italic 30px Brushstroke";
+
+ctx.fillText("Tizen",15,50);
+
+ctx.fillStyle = "#00F";
+ctx.fillText("Javascript",10,70);
+ctx.fillText("canvas",30,110);
+
+ctx.fillStyle = "#F00";
+ctx.fillText("HTML5",5,100);
+
+</script>
+
+<canvas class="cchess" id="myCanvas" width="160" height="160" style="background-color:white">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+for(var w=0;w<160;w+=40)
+{
+for (var h=0;h<160;h+=40)
+{
+ctx.fillRect(w, h, 20, 20);
+ctx.fillRect(w+20, h+20, 20, 20);
+}
+}
+
+
+</script>
+
+<br>
+      
       <ul class="ui-listview">
 			 <li class="ui-group-index">Show internal pages:</li>
-				 <li class="ui-li-anchor"><a href="#one">Show page "one"</a></li>
-				 <li class="ui-li-anchor"><a href="#three">Show page "three"</a></li>
-				 <li class="ui-li-anchor"><a href="#four">Show page "four"</a></li>
+				 <li class="ui-li-anchor"><a href="#one">Start</a></li>
+				 <li class="ui-li-anchor"><a href="#three">Text JQuery</a></li>
+				 <li class="ui-li-anchor"><a href="#four">Video</a></li>
 			</ul>
-  
+			
   </div>
   
   <div id="three" class="ui-page" style="overflow:auto">
@@ -79,11 +123,13 @@
 			$("#three5").css("font-size", "5pt");
 		</script>
 		
+		<br>
+		
       <ul class="ui-listview">
 			 <li class="ui-group-index">Show internal pages:</li>
-				 <li class="ui-li-anchor"><a href="#one">Show page "one"</a></li>
-				 <li class="ui-li-anchor"><a href="#two">Show page "two"</a></li>
-				 <li class="ui-li-anchor"><a href="#four">Show page "four"</a></li>
+				<li class="ui-li-anchor"><a href="#one">Start</a></li>
+				<li class="ui-li-anchor"><a href="#two">Image, resolution and canvas</a></li>
+				 <li class="ui-li-anchor"><a href="#four">Video</a></li>
 			</ul>
   
   </div>
@@ -97,12 +143,12 @@
 		
 		<iframe width="350vw" height="250vw" src="https://www.youtube.com/embed/XegLymXVthg" frameborder="0" allowfullscreen></iframe>
 		
-		
+		<br>
       <ul class="ui-listview">
 			 <li class="ui-group-index">Show internal pages:</li>
-				 <li class="ui-li-anchor"><a href="#one">Show page "one"</a></li>
-				 <li class="ui-li-anchor"><a href="#two">Show page "two"</a></li>
-				 <li class="ui-li-anchor"><a href="#three">Show page "three"</a></li>
+				<li class="ui-li-anchor"><a href="#one">Start</a></li>
+				<li class="ui-li-anchor"><a href="#two">Image, resolution and canvas</a></li>
+				<li class="ui-li-anchor"><a href="#three">Text JQuery</a></li>
 			</ul>
   
   </div>
